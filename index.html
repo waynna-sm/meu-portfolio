@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waynna | Portfólio</title>
+  <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <button class="logo" onclick="scrollTo('home')">Waynna</button>
+    <div class="menu">
+      <button class="menu-link menu-link--ativo" data-id="home"   onclick="scrollTo('home')">Home</button>
+      <button class="menu-link" data-id="sobre"        onclick="scrollTo('sobre')">Sobre</button>
+      <button class="menu-link" data-id="tecnologias"  onclick="scrollTo('tecnologias')">Tecnologias</button>
+      <button class="menu-link" data-id="projetos"     onclick="scrollTo('projetos')">Projetos</button>
+      <button class="menu-link" data-id="experiencia"  onclick="scrollTo('experiencia')">Experiência</button>
+      <button class="menu-link" data-id="contato"      onclick="scrollTo('contato')">Contato</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <span class="section-tag">Disponível para oportunidades</span>
+        <h1>Olá, eu sou<br /><span>Waynna Silva</span></h1>
+        <h2>Desenvolvedora Full Stack em formação</h2>
+        <p class="hero-desc">
+          Apaixonada por tecnologia, design e desenvolvimento de soluções
+          modernas. Construindo projetos que unem criatividade, organização
+          e boas práticas de programação.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollTo('projetos')">Ver Projetos</button>
+          <button class="btn-outline" onclick="scrollTo('contato')">Entrar em contato</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>10+</strong><span>Projetos</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>5+</strong><span>Tecnologias</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>100%</strong><span>Dedicação</span></div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-glow"></div>
+        <img src="src/assets/images/waynna.jpeg" alt="Waynna Silva" class="hero-photo" />
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="sobre-section">
+      <div class="sobre-bio">
+        <div class="bio-imagem">
+          <div class="bio-glow"></div>
+          <img src="src/assets/images/waynna.jpeg" alt="Waynna Silva" />
+        </div>
+        <div class="bio-texto">
+          <span class="section-tag">Sobre mim</span>
+          <h2 class="section-title">Quem sou <span>eu</span></h2>
+          <p>
+            Oi! Sou a Waynna, uma desenvolvedora full stack em formação,
+            apaixonada por transformar ideias em interfaces funcionais e
+            bonitas. Comecei minha jornada na programação por curiosidade
+            e hoje é minha maior motivação profissional.
+          </p>
+          <p class="bio-p2">
+            Atualmente estou me especializando em desenvolvimento web com
+            foco em React no front-end e Node.js no back-end, buscando
+            sempre escrever código limpo, acessível e bem estruturado.
+          </p>
+          <div class="bio-infos">
+            <div class="bio-info-item">
+              <span class="info-label">Localização</span>
+              <span class="info-value">Brasil</span>
+            </div>
+            <div class="bio-info-item">
+              <span class="info-label">Foco atual</span>
+              <span class="info-value">Full Stack Web</span>
+            </div>
+            <div class="bio-info-item">
+              <span class="info-label">Disponibilidade</span>
+              <span class="info-value info-disponivel">Disponível</span>
+            </div>
+          </div>
+          <a href="public/Currículo.pdf" class="btn-primary" style="margin-top:32px;width:fit-content;" download>
+            ⬇ Baixar Currículo
+          </a>
+        </div>
+      </div>
+
+      <div class="sobre-valores">
+        <div class="section-header">
+          <span class="section-tag">Valores</span>
+          <h2 class="section-title">O que me <span>move</span></h2>
+        </div>
+        <div class="valores-grid">
+          <div class="card valor-card">
+            <span class="valor-icon">💡</span>
+            <h3>Criatividade</h3>
+            <p>Gosto de pensar fora da caixa e criar soluções que unem estética e funcionalidade.</p>
+          </div>
+          <div class="card valor-card">
+            <span class="valor-icon">📚</span>
+            <h3>Aprendizado contínuo</h3>
+            <p>Estou sempre estudando novas tecnologias e aprimorando minhas habilidades.</p>
+          </div>
+          <div class="card valor-card">
+            <span class="valor-icon">🤝</span>
+            <h3>Colaboração</h3>
+            <p>Acredito que os melhores projetos nascem do trabalho em equipe e da troca de ideias.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGIAS ===== -->
+    <section id="tecnologias" class="techs-section">
+      <div class="section-header">
+        <span class="section-tag">Stack</span>
+        <h2 class="section-title">Minhas <span>Tecnologias</span></h2>
+        <p class="section-desc">
+          As ferramentas e linguagens que uso para construir projetos
+          do front-end ao back-end.
+        </p>
+      </div>
+
+      <div class="techs-icons-grid">
+        <div class="tech-card"><span class="tech-emoji">🌐</span><span class="tech-nome">HTML5</span></div>
+        <div class="tech-card"><span class="tech-emoji">🎨</span><span class="tech-nome">CSS3</span></div>
+        <div class="tech-card"><span class="tech-emoji">⚡</span><span class="tech-nome">JavaScript</span></div>
+        <div class="tech-card"><span class="tech-emoji">⚛️</span><span class="tech-nome">React</span></div>
+        <div class="tech-card"><span class="tech-emoji">🟢</span><span class="tech-nome">Node.js</span></div>
+        <div class="tech-card"><span class="tech-emoji">🐍</span><span class="tech-nome">Python</span></div>
+        <div class="tech-card"><span class="tech-emoji">🔀</span><span class="tech-nome">Git</span></div>
+        <div class="tech-card"><span class="tech-emoji">🗄️</span><span class="tech-nome">SQL</span></div>
+        <div class="tech-card"><span class="tech-emoji">🐘</span><span class="tech-nome">PHP</span></div>
+        <div class="tech-card"><span class="tech-emoji">⚡</span><span class="tech-nome">Vite</span></div>
+      </div>
+
+      <div class="techs-categorias">
+        <div class="card cat-card">
+          <h3 class="cat-titulo">Front-end</h3>
+          <div class="cat-items">
+            <span class="projeto-tag">HTML5</span>
+            <span class="projeto-tag">CSS3</span>
+            <span class="projeto-tag">JavaScript</span>
+            <span class="projeto-tag">React</span>
+          </div>
+        </div>
+        <div class="card cat-card">
+          <h3 class="cat-titulo">Back-end</h3>
+          <div class="cat-items">
+            <span class="projeto-tag">Node.js</span>
+            <span class="projeto-tag">Python</span>
+            <span class="projeto-tag">PHP</span>
+            <span class="projeto-tag">SQL</span>
+          </div>
+        </div>
+        <div class="card cat-card">
+          <h3 class="cat-titulo">Ferramentas</h3>
+          <div class="cat-items">
+            <span class="projeto-tag">Git</span>
+            <span class="projeto-tag">Vite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="projetos-section">
+      <div class="section-header">
+        <span class="section-tag">Portfólio</span>
+        <h2 class="section-title">Meus <span>Projetos</span></h2>
+        <p class="section-desc">
+          Alguns dos projetos que desenvolvi durante minha jornada.
+          Cada um representa aprendizado e dedicação.
+        </p>
+      </div>
+
+      <div class="filtros">
+        <button class="filtro-btn ativo" data-filtro="Todos">Todos</button>
+        <button class="filtro-btn" data-filtro="Frontend">Frontend</button>
+        <button class="filtro-btn" data-filtro="Backend">Backend</button>
+        <button class="filtro-btn" data-filtro="Fullstack">Fullstack</button>
+      </div>
+
+      <div id="projetos-grid" class="projetos-grid"></div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ===== -->
+    <section id="experiencia" class="exp-section">
+      <div class="exp-header">
+        <div class="section-header">
+          <span class="section-tag">Trajetória</span>
+          <h2 class="section-title">Minha <span>Experiência</span></h2>
+          <p class="section-desc">
+            Minha jornada de aprendizado, formação e projetos que moldaram
+            minha carreira como desenvolvedora.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-body">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <span class="exp-tipo-badge educacao">🎓 Educação</span>
+                  <h3 class="exp-titulo">Análise e Desenvolvimento de Sistemas</h3>
+                  <p class="exp-local">Faculdade Presencial</p>
+                </div>
+                <span class="exp-periodo">Fev 2026 — Atual</span>
+              </div>
+              <p class="exp-desc">
+                Formação superior focada em desenvolvimento de software, programação, banco de dados,
+                engenharia de software, arquitetura de sistemas e metodologias ágeis.
+                Desenvolvimento de projetos práticos utilizando tecnologias modernas e boas práticas de desenvolvimento.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <span class="exp-tipo-badge educacao">🎓 Educação</span>
+                  <h3 class="exp-titulo">ETEC — Informática para Internet</h3>
+                  <p class="exp-local">Técnico Presencial</p>
+                </div>
+                <span class="exp-periodo">2024 — 2025</span>
+              </div>
+              <p class="exp-desc">
+                Fundamentos de programação, lógica, algoritmos e introdução ao desenvolvimento web
+                com HTML, PHP, CSS e JavaScript, além de contato com frameworks Laravel e Bootstrap.
+              </p>
+              <div class="exp-tags">
+                <span class="projeto-tag">HTML</span>
+                <span class="projeto-tag">CSS</span>
+                <span class="projeto-tag">JavaScript</span>
+                <span class="projeto-tag">PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <span class="exp-tipo-badge educacao">🎓 Educação</span>
+                  <h3 class="exp-titulo">Ensino Médio — Técnico em Administração</h3>
+                  <p class="exp-local">Escola Antônio Nunes</p>
+                </div>
+                <span class="exp-periodo">2023 — 2025</span>
+              </div>
+              <p class="exp-desc">
+                Formação integrada ao Ensino Médio com foco em administração, gestão empresarial,
+                empreendedorismo e organização de processos. Desenvolvimento de competências em
+                trabalho em equipe, comunicação, planejamento e resolução de problemas.
+              </p>
+              <div class="exp-tags">
+                <span class="projeto-tag">Administração</span>
+                <span class="projeto-tag">Gestão</span>
+                <span class="projeto-tag">Metodologias Ágeis</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="certs-panel">
+          <h3 class="certs-titulo">
+            <span class="section-tag" style="display:block;margin-bottom:12px;">Certificações</span>
+            Meus <span style="color:var(--primary)">Certificados</span>
+          </h3>
+          <div class="certs-lista">
+            <div class="card cert-card">
+              <span class="cert-icon">🏅</span>
+              <div>
+                <p class="cert-nome">Gestão de Ameaças Cibernéticas</p>
+                <p class="cert-emissor">Cisco Networking Academy · 2025</p>
+              </div>
+            </div>
+            <div class="card cert-card">
+              <span class="cert-icon">🏅</span>
+              <div>
+                <p class="cert-nome">Noções Básicas de Redes</p>
+                <p class="cert-emissor">Cisco Networking Academy · 2024</p>
+              </div>
+            </div>
+            <div class="card cert-card">
+              <span class="cert-icon">🏅</span>
+              <div>
+                <p class="cert-nome">Introdução ao React</p>
+                <p class="cert-emissor">Plataforma Online · 2023</p>
+              </div>
+            </div>
+            <div class="card cert-card">
+              <span class="cert-icon">🏅</span>
+              <div>
+                <p class="cert-nome">Git e GitHub</p>
+                <p class="cert-emissor">Plataforma Online · 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="contato-section">
+      <div class="section-header">
+        <span class="section-tag">Fale comigo</span>
+        <h2 class="section-title">Entre em <span>Contato</span></h2>
+        <p class="section-desc">
+          Tem um projeto, uma oportunidade ou só quer bater um papo sobre
+          tecnologia? Manda uma mensagem!
+        </p>
+      </div>
+
+      <div class="contato-body">
+        <div class="redes-lista">
+          <a href="https://github.com/waynna-sm" target="_blank" rel="noreferrer" class="rede-item">
+            <span class="rede-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </span>
+            <div>
+              <p class="rede-nome">GitHub</p>
+              <p class="rede-usuario">@waynna-sm</p>
+            </div>
+            <svg class="rede-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/waynna-silva-257a9440b/" target="_blank" rel="noreferrer" class="rede-item">
+            <span class="rede-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </span>
+            <div>
+              <p class="rede-nome">LinkedIn</p>
+              <p class="rede-usuario">Waynna Silva</p>
+            </div>
+            <svg class="rede-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+
+          <a href="mailto:waynnamiranda1@gmail.com" class="rede-item">
+            <span class="rede-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div>
+              <p class="rede-nome">E-mail</p>
+              <p class="rede-usuario">waynnamiranda1@gmail.com</p>
+            </div>
+            <svg class="rede-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </div>
+
+        <div class="contato-disponivel">
+          <span class="disponivel-dot"></span>
+          <span>Disponível para novas oportunidades</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <button class="footer-logo" onclick="scrollTo('home')">Waynna</button>
+        <p class="footer-tagline">Desenvolvedora Full Stack em formação</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#home"        onclick="scrollTo('home');return false;">Home</a>
+        <a href="#sobre"       onclick="scrollTo('sobre');return false;">Sobre</a>
+        <a href="#projetos"    onclick="scrollTo('projetos');return false;">Projetos</a>
+        <a href="#experiencia" onclick="scrollTo('experiencia');return false;">Experiência</a>
+        <a href="#contato"     onclick="scrollTo('contato');return false;">Contato</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/waynna-sm" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/waynna-silva-257a9440b/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="footer-ano"></span> Waynna Silva — Feito com ❤ e muito chocolate</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
