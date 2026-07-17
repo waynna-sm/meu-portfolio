@@ -14,14 +14,19 @@
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
-    <button class="logo" onclick="scrollTo('home')">Waynna</button>
-    <div class="menu">
-      <button class="menu-link menu-link--ativo" data-id="home"   onclick="scrollTo('home')">Home</button>
-      <button class="menu-link" data-id="sobre"        onclick="scrollTo('sobre')">Sobre</button>
-      <button class="menu-link" data-id="tecnologias"  onclick="scrollTo('tecnologias')">Tecnologias</button>
-      <button class="menu-link" data-id="projetos"     onclick="scrollTo('projetos')">Projetos</button>
-      <button class="menu-link" data-id="experiencia"  onclick="scrollTo('experiencia')">Experiência</button>
-      <button class="menu-link" data-id="contato"      onclick="scrollTo('contato')">Contato</button>
+    <button class="logo" onclick="scrollToSection('home')">Waynna</button>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="menu" id="menu">
+      <button class="menu-link menu-link--ativo" data-id="home"   onclick="scrollToSection('home')">Home</button>
+      <button class="menu-link" data-id="sobre"        onclick="scrollToSection('sobre')">Sobre</button>
+      <button class="menu-link" data-id="tecnologias"  onclick="scrollToSection('tecnologias')">Tecnologias</button>
+      <button class="menu-link" data-id="projetos"     onclick="scrollToSection('projetos')">Projetos</button>
+      <button class="menu-link" data-id="experiencia"  onclick="scrollToSection('experiencia')">Experiência</button>
+      <button class="menu-link" data-id="contato"      onclick="scrollToSection('contato')">Contato</button>
     </div>
   </nav>
 
@@ -39,20 +44,13 @@
           e boas práticas de programação.
         </p>
         <div class="hero-buttons">
-          <button class="btn-primary" onclick="scrollTo('projetos')">Ver Projetos</button>
-          <button class="btn-outline" onclick="scrollTo('contato')">Entrar em contato</button>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><strong>10+</strong><span>Projetos</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><strong>5+</strong><span>Tecnologias</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><strong>100%</strong><span>Dedicação</span></div>
+          <button class="btn-primary" onclick="scrollToSection('projetos')">Ver Projetos</button>
+          <button class="btn-outline" onclick="scrollToSection('contato')">Entrar em contato</button>
         </div>
       </div>
       <div class="hero-image-wrap">
         <div class="hero-image-glow"></div>
-        <img src="src/assets/images/waynna.jpeg" alt="Waynna Silva" class="hero-photo" />
+        <img src="public/foto.jpeg" alt="Waynna Silva" class="hero-photo" />
       </div>
     </section>
 
@@ -61,7 +59,7 @@
       <div class="sobre-bio">
         <div class="bio-imagem">
           <div class="bio-glow"></div>
-          <img src="src/assets/images/waynna.jpeg" alt="Waynna Silva" />
+          <img src="public/foto.jpeg" alt="Waynna Silva" />
         </div>
         <div class="bio-texto">
           <span class="section-tag">Sobre mim</span>
@@ -302,18 +300,8 @@
               </div>
             </div>
             <div class="card cert-card">
-              <span class="cert-icon">🏅</span>
-              <div>
-                <p class="cert-nome">Introdução ao React</p>
-                <p class="cert-emissor">Plataforma Online · 2023</p>
-              </div>
-            </div>
-            <div class="card cert-card">
-              <span class="cert-icon">🏅</span>
-              <div>
-                <p class="cert-nome">Git e GitHub</p>
-                <p class="cert-emissor">Plataforma Online · 2023</p>
-              </div>
+            
+    
             </div>
           </div>
         </div>
@@ -380,15 +368,15 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <button class="footer-logo" onclick="scrollTo('home')">Waynna</button>
+        <button class="footer-logo" onclick="scrollToSection('home')">Waynna</button>
         <p class="footer-tagline">Desenvolvedora Full Stack em formação</p>
       </div>
       <nav class="footer-nav">
-        <a href="#home"        onclick="scrollTo('home');return false;">Home</a>
-        <a href="#sobre"       onclick="scrollTo('sobre');return false;">Sobre</a>
-        <a href="#projetos"    onclick="scrollTo('projetos');return false;">Projetos</a>
-        <a href="#experiencia" onclick="scrollTo('experiencia');return false;">Experiência</a>
-        <a href="#contato"     onclick="scrollTo('contato');return false;">Contato</a>
+        <a href="#home"        onclick="scrollToSection('home');return false;">Home</a>
+        <a href="#sobre"       onclick="scrollToSection('sobre');return false;">Sobre</a>
+        <a href="#projetos"    onclick="scrollToSection('projetos');return false;">Projetos</a>
+        <a href="#experiencia" onclick="scrollToSection('experiencia');return false;">Experiência</a>
+        <a href="#contato"     onclick="scrollToSection('contato');return false;">Contato</a>
       </nav>
       <div class="footer-socials">
         <a href="https://github.com/waynna-sm" target="_blank" rel="noreferrer" aria-label="GitHub">
